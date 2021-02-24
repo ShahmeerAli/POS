@@ -1,0 +1,347 @@
+{
+    "products": [{
+        "src":"hotdog",
+        "name":"HOT DOG",
+        "cat":"Main Course",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"chicken-lollipop",
+        "name":"LOLLIPOP",
+        "cat":"Main Course",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"icecream",
+        "name":"ICE CREAM",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"dounuts",
+        "name":"DOUNUTS",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"applePie",
+        "name":"APPLE PIE",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"custard",
+        "name":"CUSTARD",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"pizza",
+        "name":"PIZZA",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"dew",
+        "name":"DEW",
+        "cat":"Soft Drinks",
+        "qty":1,
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"pepsi",
+        "name":"PEPSI",
+        "cat":"Soft Drinks",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"fries",
+        "name":"FRENCH FRIES",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"fish4",
+        "name":"FRIED FISH",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"pomegranate",
+        "name":"POMEGRANATE",
+        "cat":"Juices",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"lemon3",
+        "name":"LEMONADE",
+        "cat":"Juices",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"nuggets",
+        "name":"NUGGETS",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"broast",
+        "name":"BROAST",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"sandwich",
+        "name":"SANDWICH",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"burger2",
+        "name":"BURGER",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"coke5",
+        "name":"COKE",
+        "cat":"Soft Drinks",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"icecream",
+        "name":"ICE CREAM",
+        "cat":"Dessert",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"lemon3",
+        "name":"LEMONADE",
+        "cat":"Juices",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"pizza",
+        "name":"PIZZA",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "src":"hotdog",
+        "name":"HOT DOG",
+        "cat":"Main Course",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"chicken-lollipop",
+        "name":"LOLLIPOP",
+        "cat":"Main Course",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"icecream",
+        "name":"ICE CREAM",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"dounuts",
+        "name":"DOUNUTS",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"applePie",
+        "name":"APPLE PIE",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"custard",
+        "name":"CUSTARD",
+        "cat":"Dessert",
+        "qty":1,
+        "price":100,
+        "vat":2
+    },
+    {
+        "src":"pizza",
+        "name":"PIZZA",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"dew",
+        "name":"DEW",
+        "cat":"Soft Drinks",
+        "qty":1,
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"pepsi",
+        "name":"PEPSI",
+        "cat":"Soft Drinks",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"fries",
+        "name":"FRENCH FRIES",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"fish4",
+        "name":"FRIED FISH",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"pomegranate",
+        "name":"POMEGRANATE",
+        "cat":"Juices",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"lemon3",
+        "name":"LEMONADE",
+        "cat":"Juices",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"nuggets",
+        "name":"NUGGETS",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"broast",
+        "name":"BROAST",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"sandwich",
+        "name":"SANDWICH",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"burger2",
+        "name":"BURGER",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"coke5",
+        "name":"COKE",
+        "cat":"Soft Drinks",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"icecream",
+        "name":"ICE CREAM",
+        "cat":"Dessert",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"lemon3",
+        "name":"LEMONADE",
+        "cat":"Juices",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    },
+    {
+        "src":"pizza",
+        "name":"PIZZA",
+        "cat":"Main Course",
+        "qty":1, 
+        "price":100, 
+        "vat":2
+    }]
+}

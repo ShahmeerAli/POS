@@ -1,38 +1,712 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  min-height: 94.6vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color:  black;
+}
+
+.mainBack{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.mainBackContainer {
+  background-color: rgba(0,0,0,0.1);
+  min-height: 98vh;
+  min-width: 99%;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.8), 0 1px 4px rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ========================================= */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  min-width: 20%;
+  max-width: 20%;
+  height: 50vh;
+  margin-left: 5%;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 100%; /* Remove this if you don't want the 3D effect */
+  border-radius: 10%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.8), 0 1px 4px rgb(73, 2, 2);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front, .flip-card-back p{
+  color: white;
+  font-size: 1.5vw;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.flip-card-front, .flip-card-back h1{
+  color: white;
+  padding: 3%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the back side */
+.flip-card-back {
+  background-color:rgba(77, 0, 0, 0.7);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+/* ============================================================ */
+
+
+
+
+/* =============================  GLASS  ======================================= */
+.glass{
+  background: white;
+  min-height: 90vh;
+  width: 68%;
+  margin-left: 1%;
+  /* background-image: url('%PUBLIC%URL%/back6.jpg'); */
+  background-size: cover;
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.8), 0 1px 4px rgba(255, 255, 255, 1);
+}
+
+
+.header{
+  min-height: 6vh;
+  width: 90%;
+  background:  rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  color: white;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.48), 0 1px 4px rgba(0, 0, 0, 0.96);
+}
+
+.header button{
+  border-radius: 5%;
+
+}
+
+.pag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 5vh;
+  margin-bottom: .2%;
+  background-color: black;
+}
+
+.pag button{
+  background-color: rgb(2, 168, 2);
+  color:white;
+}
+
+button{
+  min-width: 4vw;
+  font-size:2vh;
+  font-weight: 600;
+  font-family: sans-serif;
+  background-color:black;
+  padding: 1vh;
+  margin: .25vh;
+  color: white;
+  /* border: none; */
+  box-shadow: 0 .5px 2px rgba(0, 0, 0, 0.1), 0 .5px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color:  white;
+  color: black;
+  transition: .05s;
+}
+
+button:active{
+  color: white;
+  background-color: black;
+}
+
+
+.searchButton{
+  min-width: 2vw;
+}
+
+
+.main-content{
+  min-height: 80vh;
+}
+
+.content-one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer{
+  min-height: 6vh;
+  width: 80%;
+  background:  rgba(0, 0, 0, 0.7);
+  /* background: black; */
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  color: white;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.card{
+  background:  rgba(0, 0, 0, 0.7);
+  /* background-image: linear-gradient(to bottom right,  rgba(95, 10, 10, 0.3),  rgba(95, 10, 10, 0.7)); */
+  min-height: 25vh;
+  max-height: 25vh;
+  min-width: 9vw;
+  max-width: 9vw;
+  border-radius: .8rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  margin: 1%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8), 0 1px 4px rgba(0, 0, 0, 1);
+}
+
+
+.cardImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cardImg img{
+  margin: 0;
+  max-width: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price,.title, .addButton{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price p, .title p{
+  font-size: 2vh;
+}
+.footer p{
+  font-size: 3vh;
+}
+
+.addButton button{
+  min-height: 2vh;
+  min-width: 5vw;
+  background-image: linear-gradient(to bottom right, rgb(3, 94, 3), rgb(114, 248, 101) );
+  color: white;
+  font-size: 2vh;
+  /* border: none; */
+  border-radius: 30%;
+}
+
+.addButton:hover button{
+  /* min-width: 5.5vw;
+  min-height: 4vh;
+  font-size: 3vh; */
+  background-image:linear-gradient(to right, white,white);
+  color: green;
+}
+
+.addButton:active button{
+  /* min-width: 5vw;
+  min-height: 3vh;
+  font-size: 2.5vh; */
+  background-image: linear-gradient(to bottom right, green, rgb(57, 230, 42) );
+  color: white;
+}
+
+
+.searchFeild{
+  margin-left: 10vw;
+  max-width: 11.6vw;
+  height: 4.2vh;
+  font-size: 2vh;
+}
+
+
+.subscript{
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+}
+
+
+/* =======================================  CART  ================================================= */
+
+
+.cart{
+  /* background-image: url("/public/images/back2.jpg"); */
+  background-size: cover;
+  min-height: 92vh;
+  width: 32%;
+  z-index: 2;
+  backdrop-filter: blur(2rem); 
+  border:  black .8vw solid;
+}
+
+.cart-container{
+  background-color: rgba(0,0,0,0.5);
+  min-height: 90vh;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.8), 0 1px 4px rgba(255, 255, 255, 1);
+}
+
+.orderHead, .subHead, .itemHead, .qtyHead, .priceHead,.seatc .totalHead, .main-cart, .cartTotal, .proceedButton, .deleteItem, .proceedAccept, .proceedCancel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderHead p{
+  color: white;
+  font-size: 2.5vw;
+  margin: 1%;
+  font-weight: 800;
+}
+
+.blue{
+  color: yellow;
+}
+
+.subHead{
+  margin: 5%;
+}
+
+.itemHead{
+  min-width: 9.5vw;
+}
+
+.qtyHead{
+  min-width: 4.5vw;
+}
+
+.qtyHead input{
+  max-width: 4vw;
+  font-size: 1.5vw;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 800;
+}
+
+.priceHead{
+  min-width: 5vw;
+}
+
+.totalHead{
+  min-width: 6vw;
+}
+
+.deleteItem{
+  min-width: 4.5vw;
+}
+
+.subHead, .main-cart p{
+  color: white;
+  font-size: 1.5vw;
+  /* margin: 2%; */
+}
+
+.totalText, .allTotal{
+  color: white;
+  font-size: 2vw;
+  margin: 2%;
+  font-weight: 400;
+}
+
+.red{
+  color:  red;
+  font-weight: 600;
+}
+
+.del{
+  border-radius: 50%;
+  min-width: 2vw;
+}
+
+.proceedButton{
+  min-height: 7vh;
+  margin-top: 5%;
+}
+
+.proceedButton button{
+  min-width: 8vw;
+  min-height: 6vh;
+  border-radius: 5%;
+}
+
+.proceedAccept, .proceedCancel{
+  min-width: 50%;
+}
+
+.proceedCancel button{
+  background-color: orangered;
+}
+
+.proceedCancel:hover button{
+  background-color: white;
+  color: orangered;
+  min-width: 8.5vw;
+  min-height: 6.5vh;
+  font-size: 2.6vh;
+}
+
+.proceedAccept button{
+  background-image: linear-gradient(to right bottom, rgb(63, 226, 30),rgb(2, 85, 2));
+}
+
+.proceedAccept:hover button{
+  background-image: linear-gradient(to right bottom, rgb(7, 85, 7), rgb(123, 235, 123));
+  color: white;
+  min-width: 8.5vw;
+  min-height: 6.5vh;
+  font-size: 2.6vh;
+}
+
+.proceedAccept:active button{
+  background-color: green;
+  color: white;
+  min-width: 5vw;
+  min-height: 4vh;
+  font-size: small;
+}
+
+.proceedCancel:active button{
+  background-color: orangered;
+  color: white;
+  min-width: 5vw;
+  min-height: 4vh;
+  font-size: small;
+  /* transition: .3s; */
+}
+
+
+.deleteItem button{
+  background-color: red;
+  border: none;
+}
+
+.deleteItem:hover button{
+  color: red;
+  background-color: white;
+}
+
+.deleteItem:active button{
+  color: white;
+  background-color: red;
+}
+
+
+
+
+
+/* ==================================================================================================
+================================================================================================== */
+.bill-container{
+  max-height: 92vh;
+  width: 68%;
+  background-size: cover;
+  border-radius: 7rem 0 7rem 0;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.8), 0 1px 4px rgba(255, 255, 255, 1);
+}
+
+.order-container{
+  /* background-image: url("/public/images/back7.jpg"); */
+  min-height: 92vh;
+  background-size: inherit;
+  width: 30%;
+  z-index: 2;
+  /* backdrop-filter: blur(2rem);  */
+  /* border:  black .8vw solid; */
+  margin-right: 1%;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.8), 0 1px 4px rgba(255, 255, 255, 1);
+}
+
+.bill{
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 98%;
+  min-height: 92vh;
+  border-radius: 5rem 0 5rem 0;   
+  /* margin-top: 7%; */
+  margin-left: 1%;
+}
+
+.bill p{
+  color: white;
+}
+
+.bill .blue{
+  color: red;
+}
+
+.order-container .main-cart, .order-container .subHead{
+  border: .1vw white solid;
+}
+
+
+.itemHead1, .qtyHead1, .totalHead1, .deleteItem1, .viewItem1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemHead1{
+  min-width: 4vw;
+}
+
+.qtyHead1{
+  min-width: 6.5vw;
+}
+
+
+.totalHead1{
+  min-width: 4vw;
+}
+
+.deleteItem1{
+  min-width: 7vw;
+}
+
+.viewItem2{
+  min-width: 3vw;
+}
+
+.viewItem1{
+  min-width: 3vw;
+}
+
+.viewItem1:hover p{
+  cursor: pointer;
+  color: red;
+  font-size: 2.5vw;
+}
+
+.viewItem1:active p{
+  color: white;
+  font-size: 1.5vw;
+}
+
+.order-subHead, .order-main, .order-sno,.order-item,.order-qty,.order-price,.order-vat,.order-total, .total-head, .total-value,.sales{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-head{
+  margin-top: 5%;
+  margin-left: 55%;
+}
+.total-value{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.order-subHead{
+  margin-bottom: 2%;
+}
+
+
+.order-sno{
+  min-width: 5vw;
+}
+                          
+          
+.order-item{
+  min-width: 20vw;
+}
+                             
+              
+
+.order-qty{
+  min-width: 6vw;
+}
+                  
+                  
+
+.order-price{
+  min-width: 8vw;
+}
+                              
+              
+          
+.order-vat{
+  min-width: 6vw;
+}
+                              
+                     
+
+.order-total{
+  min-width: 10vw;
+}
+                             
+.order-content p{
+  font-size: 3.5vh;
+
+}
+
+.date{
+  margin-left: 25%;
+  font-size: 3vh;
+  color: white;
+  /* min-width: 5; */
+}
+
+
+.lastButton{
+  position: absolute;
+  max-width: 5vh;
+  max-height: 5vh;
+  margin-left: 0%;
+  margin-top: 30%;
+}
+
+
+.lastButton:active{
+  max-width: 4.9vh;
+  max-height: 4.9vh;
+  margin-left: 1%;
+}
+
+
+.nextButton{
+  position: absolute;
+  max-width: 5vh;
+  max-height: 5vh;
+  margin-left: 96%;
+  margin-top: 30%;
+}
+
+.nextButton:active{
+  max-width: 4.9vh;
+  max-height: 4.9vh;
+  margin-left: 95%;
+}
+
+
+.sales h2{
+  color: white;
+  padding-left: 2%;
+}
+
+/* ======================================================= BILL */
+
+.ticket{
+  font-size: 12px;
+  font-family: 'Times New Roman';
+  visibility: hidden;
+}
+
+td,
+th,
+tr,
+table {
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+
+td.description,
+th.description {
+  width: 75px;
+  max-width: 75px;
+}
+
+td.quantity,
+th.quantity {
+  width: 40px;
+  max-width: 40px;
+  word-break: break-all;
+}
+
+td.price,
+th.price {
+  width: 40px;
+  max-width: 40px;
+  word-break: break-all;
+}
+
+.centered {
+  text-align: center;
+  align-content: center;
+}
+
+.ticket {
+  width: 155px;
+  max-width: 155px;
+}
+
+.ticket img {
+  max-width: 30%;
+  width: 30%;
+}
+
+@media print {
+  .hidden-print,
+  .hidden-print * {
+      display: none !important;
   }
 }

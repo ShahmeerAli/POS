@@ -1,0 +1,20 @@
+//For Redux Actions
+export const PRODUCTS_LOADING = "PRODUCTS_LOADING";
+export const PRODUCTS_FAIL = "PRODUCTS_FAIL";
+export const PRODUCTS_SUCCESS = "PRODUCTS_SUCCESS";
+export const SORT_PRODUCTS = "SORT_PRODUCTS";
+export const SEARCH_PRODUCTS = "SEARCH_PRODUCTS";
+export const NEXT_PAGE = "NEXT_PAGE";
+export const ADDTOCART = "ADDTOCART";
+export const CALCALLTOTAL = "CALCALLTOTAL";
+export const BILL_SUCCESS ="BILL_SUCCESS";
+export const BILL_FAIL = "BILL_FAIL";
+export const BILL_LOADING = "BILL_LOADING";
+export const ORDER_TABLE_LOADING = "ORDER_TABLE_LOADING";
+export const ORDER_TABLE_SUCCESS = "ORDER_TABLE_SUCCESS";
+export const ORDER_TABLE_FAIL = "ORDER_TABLE_FAIL";
+export const BILLS_SUCCESS ="BILLS_SUCCESS";
+export const BILLS_FAIL = "BILLS_FAIL";
+export const BILLS_LOADING = "BILLS_LOADING";
+
+
